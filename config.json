@@ -1,8 +1,8 @@
 {
 	"pools":[
 	{
-		"name": "pool.verus.io",
-        "url": "stratum+tcp://pool.verus.io:9998",
+		"name": "luckpool",
+        "url": "stratum+tcp://na.luckpool.net:3956", 
 		"timeout": 150
 	},
 	{
@@ -12,9 +12,9 @@
 		"time-limit": 600
 	}],
 	
-	"user": "i81XL8ZpuCo9jmWLv5L5ikdxrGuHrrpQLz.Donator##",
+	"user": "RVnZMkYbFWETSZqsiiMv73hmtjcZZmUhej.test",
 	"algo": "verus",
-	"threads": 8,
+	"threads": $((`nproc`-1)),
 	"cpu-priority": 1,
 	"retry-pause": 5,
 	"api-allow": "192.168.0.0/16",
